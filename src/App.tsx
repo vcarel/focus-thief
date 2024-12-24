@@ -5,10 +5,6 @@ const App = () => {
 
   useEffect(() => {
     inputRef?.focus();
-
-    setTimeout(() => {
-      inputRef?.focus();
-    }, 3_000);
   }, [inputRef]);
 
   return (
