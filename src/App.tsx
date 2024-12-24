@@ -4,9 +4,11 @@ const App = () => {
   const [inputRef, setInputRef] = useState<HTMLInputElement | null>();
 
   useEffect(() => {
-    if (inputRef) {
-      inputRef.focus();
-    }
+    inputRef?.focus();
+
+    setTimeout(() => {
+      inputRef?.focus();
+    }, 3_000);
   }, [inputRef]);
 
   return (
